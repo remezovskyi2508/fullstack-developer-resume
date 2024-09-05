@@ -1,0 +1,6 @@
+.modal-menu {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}

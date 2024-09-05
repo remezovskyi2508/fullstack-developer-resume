@@ -1,0 +1,12 @@
+import './js/header';
+import './js/hero';
+import './js/about-me';
+import './js/slider';
+import './js/benefits';
+import './js/projects';
+import './js/faq';
+import './js/covers';
+import './js/reviews';
+import './js/work-together';
+import './js/modal-menu';
+import './js/modal-work-together';
