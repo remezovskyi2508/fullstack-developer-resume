@@ -1,0 +1,226 @@
+@import url('accordion-js/dist/accordion.min.css');
+
+.is-closed {
+  overflow: hidden;
+  max-height: 0;
+}
+
+/*================ MOBILE STYLE  ======================*/
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 64px auto 32px auto;
+}
+
+.about-me-description {
+  width: 343px;
+  height: 500px;
+  background-color: #242527;
+  border-radius: 24px;
+}
+
+.about-me-parag {
+  margin: 0 auto;
+  padding-top: 32px;
+  width: 279px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.about-me-span {
+  color: #ed3b44;
+}
+.about-me-span-2 {
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.about-me-list {
+  margin-bottom: 32px;
+}
+
+.about-me-header-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 36px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.about-me-header {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.about-me-btn {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  padding: 9px;
+  width: 36px;
+  height: 36px;
+  background-color: #1c1d20;
+}
+.first-paragrah {
+  padding-bottom: 32px;
+}
+
+.about-me-li::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(250, 250, 250, 0.2);
+  margin-top: 20px;
+}
+
+.about-me-grid {
+  font-weight: 500;
+  color: #fafafa;
+}
+
+.role-list > li,
+.education-list > li {
+  padding-bottom: 10px;
+}
+
+.skills-swipper,
+.about-me-skills-list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills-swipper {
+  column-gap: 55px;
+  text-align: center;
+}
+.about-me-skills-li {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  background-color: #1c1d20;
+}
+.skills-text {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about-me-skills-li:nth-child(1) {
+  background-color: #ed3b44;
+}
+
+.about-me-skills-li:nth-child(n + 3) {
+  display: none;
+}
+
+.skills-btn {
+  width: 40px;
+  height: 40px;
+}
+
+/*================ TABLET STYLE  ======================*/
+@media only screen and (min-width: 768px) {
+  .about-me {
+    margin-bottom: 64px;
+  }
+
+  .about-me-description {
+    width: 704px;
+    height: 700px;
+  }
+
+  .about-me-parag {
+    padding-top: 64px;
+    width: 576px;
+    font-size: 38px;
+    line-height: 105%;
+  }
+
+  .about-me-header-wrapper {
+    margin-bottom: 8px;
+  }
+  .about-me-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about-me-svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .second-paragrah {
+    padding-bottom: 12px;
+  }
+  .about-me-skills-li:nth-child(n + 3) {
+    display: flex;
+  }
+  .about-me-skills-li:nth-child(n + 4) {
+    display: none;
+  }
+}
+
+/*================ DESKTOP STYLE  ======================*/
+@media only screen and (min-width: 1440px) {
+  .about-me {
+    width: 1376px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding-bottom: 96px;
+  }
+
+  .about-me-description {
+    width: 680px;
+    height: 700px;
+  }
+
+  .about-me-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-me-paragrah,
+  .role-list,
+  .education-list {
+    grid-column-start: 2;
+  }
+
+  .about-me-paragrah {
+    width: 612px;
+  }
+
+  .education-list {
+    width: 465px;
+  }
+
+  .about-me-skills-li:nth-child(n + 4) {
+    display: flex;
+  }
+
+  .about-me-skills-li {
+    width: 200px;
+    height: 200px;
+  }
+
+  .swiper {
+    width: 1200px;
+    height: 200px;
+  }
+}
