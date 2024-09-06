@@ -1,7 +1,13 @@
 .hero {
   width: 375px;
   height: 812px;
-  background-image: url('../img/hero/Hero.png');
+  background: linear-gradient(
+    90deg,
+    #1c1d20 49.68%,
+    #69292d 67.73%,
+    #ed3b44 100%
+  );
+  background-image: url('/img/hero/Hero.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 45% center;
@@ -40,4 +46,29 @@
 
 .hero-navigation-link {
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 375px) {
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    height: 1024px;
+  }
+}
+.hero-title {
+  font-weight: 500;
+  font-size: 90px;
+  /* width: 632px;
+  height: 450px; */
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    width: 1440px;
+    height: 900px;
+  }
 }
