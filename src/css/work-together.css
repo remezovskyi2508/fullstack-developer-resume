@@ -42,6 +42,7 @@
 
 
 .work-together-form input {
+  position: relative;
   width: 100%;
   height: 44px;
   font-weight: 500;
@@ -55,7 +56,39 @@
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
+.form-span {
+  position: absolute;
+  transform: translateY(44px);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  
+}
 
+.work-together-form input:valid + span::after {
+  content: "Success!";
+  color: #3cbc81;
+}
+
+.work-together-form input:valid:nth-child(1) {
+  border-bottom: 1px solid #3cbc81;
+}
+
+.work-together-form input:nth-child(3) {
+  overflow: auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.work-together-form input:user-invalid + span::after {
+  content: "Invalid email, try again";
+  color: #E74A3B;
+}
+
+.work-together-form input:user-invalid:nth-child(1) {
+  border-bottom: 1px solid #E74A3B;
+}
 
 .work-together-form button {
   width: 100px;
@@ -133,6 +166,10 @@
     font-size: 16px;
     padding: 18px 32px;
     height: 55px;
+  }
+
+  .form-span {
+    transform: translateY(98px);
   }
 }
 
