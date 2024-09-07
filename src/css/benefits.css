@@ -83,8 +83,8 @@
     .benefits {
         max-width: 1376px;
         height: 675px;
-        margin-top: 82px;
-        margin-bottom: 82px;
+        padding-top: 82px;
+        padding-bottom: 82px;
     }
 
     .benefits-title {
