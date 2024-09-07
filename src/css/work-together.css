@@ -3,7 +3,7 @@
 .work-together-container {
   height: 552px;
   padding-top: 32px;
-  background-image: url(../img/work-together/elements.png);
+  background-image: url(/img/work-together/elements.png);
   background-repeat: no-repeat;
   background-position-x: 300px;
 

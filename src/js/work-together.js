@@ -1,7 +1,7 @@
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-// import openModal from '/js/modal-menu';
+import { openModal } from '/js/modal-menu';
 
 const form = document.querySelector('.work-together-form-js');
 
@@ -17,11 +17,18 @@ async function onSubmit(event) {
       email: email.value,
       comment: comment.value,
     });
-    // openModal(data);
+    openModal(data);
     form.reset();
   } catch (error) {
+    console.log(error);
     iziToast.show({
-      message: error.message,
+      class: 'error',
+      messageColor: '#FAFAFA',
+      title: error.message,
+      titleColor: '#FAFAFA',
+      message: error.response.data.message,
+      image: '/img/work-together/Error.png',
+      imageWidth: 60,
       color: '#ED3B44',
       position: 'topCenter',
     });
