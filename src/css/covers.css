@@ -1,14 +1,10 @@
 .section-covers{
-    background-image: url(../img/covers/cover-background.png);
+    background-image: url(/img/covers/cover-background.png);
     height: 508px;
     overflow: hidden;
 
   }
-  /* @media screen and (min-resolution: 192dpi){
-    .section-covers{
-      background-image: url(../img/covers/cover-background@2x.png);
-    }
-} */
+ 
   .content {
     position: relative;
   }
@@ -16,17 +12,12 @@
     position: absolute;
     left: 0;
     overflow: hidden;
-    /* right: -800px; */
-    /* font-family: "Pridi", sans-serif;
-    font-weight: 600;
-    font-size: 34px;
-    text-transform: uppercase; */
+  
   }
   
   .marquee__inner {
       display: flex;
       transform: rotate(16deg);
-      /* height: 100vh; */
     
   }
   
@@ -43,7 +34,7 @@
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-play-state: paused;
-    /* width: calc(100% / 10);  */
+  
   }
   
   @keyframes marqueeLine {
@@ -71,11 +62,5 @@
       }
   }
   
-  /* Styles for Desktop devices */
-  @media only screen and (min-width: 1440px) {
-    .section-covers{
-        height: 960px;
-      }
-  }
-
+ 
 
