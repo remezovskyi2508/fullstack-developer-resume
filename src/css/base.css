@@ -4,19 +4,43 @@
 :root {
   --main-bg-color: #1c1d20;
   --content-bg-color: #242527;
-  --arrow-color: #3B3B3B;
-  --flame-red-color: #ED3B44;
+  --arrow-color: #3b3b3b;
+  --flame-red-color: #ed3b44;
   --main-text-color: #fafafa;
 }
 
 body {
-  background-color: var(--main-bg-color);;
+  background-color: var(--main-bg-color);
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: -0.02em;
   color: var(--main-text-color);
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+/* h2, h3 COMMON STYLES */
+h2,
+h3 {
+  font-weight: 600;
+}
+/* h2 - styles */
+h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+/* h3 - styles */
+h3 {
+  font-size: 20px;
 }
 
 /* Style for empty/hidden Header */
