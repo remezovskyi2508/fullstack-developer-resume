@@ -58,6 +58,9 @@
     width: 768px;
     height: 1024px;
   }
+  .hero-navigation-list {
+    justify-content: flex-end;
+  }
 }
 .hero-title {
   font-weight: 500;
