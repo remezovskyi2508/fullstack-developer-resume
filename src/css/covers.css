@@ -2,7 +2,7 @@
     background-image: url(/img/covers/cover-background.png);
     height: 508px;
     overflow: hidden;
-
+    margin: 32px 0;
   }
  
   .content {
