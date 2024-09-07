@@ -1,7 +1,10 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <!-- Mobile Header -->
-
+<symbol id="icon-menu" viewBox="0 0 32 32">
+<path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M4.001 11.336h24.006M4.001 20.671h24.006"></path>
+</symbol>
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><defs><symbol id="icon-x" viewBox="0 0 32 32"><path fill="#ffffff" stroke="#fafafa" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.286" d="M24 8 8 24M8 8l16 16" style="stroke:var(--color1, #fafafa)"/></symbol></defs></svg>
 <!-- About-me -->
 
 <!-- Slider -->
