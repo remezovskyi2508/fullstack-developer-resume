@@ -1,6 +1,7 @@
-.hero {
+/* .hero {
   width: 375px;
   height: 812px;
+  padding: 32px 0;
   background: linear-gradient(
     90deg,
     #1c1d20 49.68%,
@@ -11,16 +12,16 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 45% center;
-}
+} */
 
 .hero-title {
   font-family: var(--font-family);
-  font-size: 50px;
   line-height: 100%;
-  letter-spacing: -0.03em;
   color: var(--main-text);
   padding-top: 281px;
   padding-bottom: 213px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .hero-navigation-list {
@@ -51,27 +52,53 @@
   align-items: center;
   text-align: center;
 }
-@media screen and (min-width: 375px) {
-}
+
 @media screen and (min-width: 768px) {
-  .hero {
+  /* .hero {
     width: 768px;
     height: 1024px;
+  } */
+
+  .hero-title {
+    font-size: 90px;
+    width: 632px;
+    padding-top: 300px;
+    padding-bottom: 187px;
+    padding-left: 32px;
   }
   .hero-navigation-list {
+    display: flex;
     justify-content: flex-end;
+
+    width: 473px;
+    height: 55px;
+    gap: 8px;
+    margin-left: auto;
   }
-}
-.hero-title {
-  font-weight: 500;
-  font-size: 90px;
-  /* width: 632px;
-  height: 450px; */
+  .hero-navigation-item {
+    padding: 18px 20px;
+    width: 55px;
+    height: 55px;
+  }
+  .hero-navigation-item-mail {
+    width: 223px;
+    height: 55px;
+  }
+  .hero-navigation-link {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-  .hero {
+  /* .hero {
     width: 1440px;
     height: 900px;
+  } */
+  .hero-title {
+    font-size: 90px;
+    width: 1084px;
+    padding-top: 300px;
+    padding-bottom: 243px;
+    padding-left: 178px;
   }
 }
