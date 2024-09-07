@@ -6,7 +6,7 @@
   background-image: url(../img/work-together/elements.png);
   background-repeat: no-repeat;
   background-position-x: 300px;
-  padding-left: 16px;
+
 }
 
 .logo-img {
@@ -20,8 +20,6 @@
 
 
 .work-together-header {
-  text-transform: uppercase;
-  font-weight: 500;
   font-size: 40px;
   line-height: 100%;
   letter-spacing: -0.03em;
@@ -45,10 +43,6 @@
   position: relative;
   width: 100%;
   height: 44px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
   color: #FAFAFA;
   background-color: transparent;
   border: none;
@@ -59,10 +53,8 @@
 .form-span {
   position: absolute;
   transform: translateY(44px);
-  font-weight: 500;
   font-size: 14px;
   line-height: 129%;
-  letter-spacing: -0.02em;
   
 }
 
@@ -99,10 +91,18 @@
   color: #FAFAFA;
   margin-top: 32px;
   margin-bottom: 64px;
+  align-self: center;
 }
 
 .work-together-form button:hover {
   background-color: #E0373F;
+}
+
+.work-together-contacts {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .work-together-contacts a {
@@ -110,16 +110,13 @@
   width: fit-content;
   line-height: normal;
   font-style: normal;
-  text-decoration: none;
-  font-weight: 500;
   font-size: 14px;
-  letter-spacing: -0.02em;
   color: #FAFAFA;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   padding: 10px 12px;
   height: 37px;
-  margin-right: 4px;
+  /* margin-right: 4px; */
   box-sizing: border-box;
 }
 
@@ -159,6 +156,7 @@
     width: 150px;
     height: 150px;
     margin: 0;
+    align-self: auto;
   }
 
   .work-together-contacts a {
@@ -170,6 +168,14 @@
 
   .form-span {
     transform: translateY(98px);
+  }
+
+  .work-together-contacts {
+    display: block;
+  }
+
+  .work-together-contacts a {
+    margin-right: 8px;
   }
 }
 
