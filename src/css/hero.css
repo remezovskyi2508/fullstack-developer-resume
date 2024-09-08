@@ -82,6 +82,11 @@
   background-position: 45% center;
 }
 
+.hero-glas-effect {
+  background-image: url(/img/hero/Glass\ effect\ 1.png);
+  background-repeat: no-repeat;
+}
+
 .hero-title {
   margin-top: calc(249px - 25px);
 }
