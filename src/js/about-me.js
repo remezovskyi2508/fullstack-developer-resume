@@ -5,6 +5,8 @@ const accordionBtn = document.querySelectorAll('.about-me-btn');
 const container = document.querySelector('.accordion-container');
 
 const accordion = new Accordion(container, {
+  // elementClass: 'about-me-li',
+  // triggerClass: 'ac-trigger',
   closeOther: true,
   slideSpeed: 400,
   modal: true,
