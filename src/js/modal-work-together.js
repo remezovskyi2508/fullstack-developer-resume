@@ -1,11 +1,15 @@
 const modalMenu = document.querySelector(".modal-menu-dialog");
-// const modalInner = document.querySelector(".modal-inner");
 const btnCloseModal = document.querySelector(".btn-svg-modal-icon");
 const btnOpenModal = document.querySelector(".footer-send-btn");
 
-const openModal = () => {    
-    modalMenu.showModal();
-}
+export function openModal(data) {
+    modalMenu.show();
+    const modalTitle = document.querySelector('.modal-title');
+    const modalMessage = document.querySelector('.modal-messages');
+  
+    modalTitle.textContent = data.title;
+    modalMessage.textContent = data.message;
+  }
 
 const closeModal = () => {
     modalMenu.close();
@@ -19,6 +23,9 @@ modalMenu.addEventListener('click', (event) =>{
         modalMenu.close();
         }
 });
+
+
+
 
 btnOpenModal.addEventListener('click', openModal);
 btnCloseModal.addEventListener('click', closeModal);
