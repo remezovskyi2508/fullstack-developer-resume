@@ -72,7 +72,7 @@
   border-radius: 0 0 24px 24px;
   background-color: var(--content-bg-color);
   display: flex;
-  height: 395px;
+  padding: 100px 0;
 }
 
 .projects-section-list-card-image-img {
@@ -155,7 +155,7 @@
   }
 
   .projects-section-list-card-image {
-    height: 704px;
+    padding: 160px 0;
   }
 
   .projects-nav {
@@ -189,6 +189,6 @@
   .projects-section-list-card-image {
     border-radius: 0 24px 24px 0;
     width: 50%;
-    height: auto;
+    padding: 0;
   }
 }
