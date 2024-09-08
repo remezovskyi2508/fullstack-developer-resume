@@ -1,9 +1,5 @@
 @import url('accordion-js/dist/accordion.min.css');
-
-.is-closed {
-  overflow: hidden;
-  max-height: 0;
-}
+@import url('swiper/css/bundle');
 
 /*================ MOBILE STYLE  ======================*/
 .about-me {
@@ -63,14 +59,22 @@
   color: rgba(250, 250, 250, 0.4);
 }
 
-.about-me-btn {
+.about-me-btn.ac-trigger {
+  display: flex;
+  align-items: center;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 100px;
-  padding: 9px;
+  padding: 10px;
   width: 36px;
   height: 36px;
   background-color: #1c1d20;
 }
+
+.is-active-svg .about-me-svg {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
+}
+
 .first-paragrah {
   padding-bottom: 32px;
 }
@@ -94,18 +98,13 @@
   padding-bottom: 10px;
 }
 
-.skills-swipper,
 .about-me-skills-list {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 }
-.skills-swipper {
-  column-gap: 55px;
-  text-align: center;
-}
+
 .about-me-skills-li {
   position: relative;
   width: 130px;
@@ -123,15 +122,6 @@
 }
 .about-me-skills-li:nth-child(1) {
   background-color: #ed3b44;
-}
-
-.about-me-skills-li:nth-child(n + 3) {
-  display: none;
-}
-
-.skills-btn {
-  width: 40px;
-  height: 40px;
 }
 
 /*================ TABLET STYLE  ======================*/
@@ -167,12 +157,6 @@
 
   .second-paragrah {
     padding-bottom: 12px;
-  }
-  .about-me-skills-li:nth-child(n + 3) {
-    display: flex;
-  }
-  .about-me-skills-li:nth-child(n + 4) {
-    display: none;
   }
 }
 
@@ -210,17 +194,53 @@
     width: 465px;
   }
 
-  .about-me-skills-li:nth-child(n + 4) {
-    display: flex;
-  }
-
   .about-me-skills-li {
     width: 200px;
     height: 200px;
   }
+}
 
-  .swiper {
-    width: 1200px;
-    height: 200px;
-  }
+/*==============  ACORDEON  ==================*/
+
+.ac-panel {
+  display: none;
+}
+
+.ac {
+  background-color: transparent;
+  border: none;
+}
+.ac-trigger {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  padding: 0px;
+  width: 40px;
+  height: 40px;
+}
+.ac .ac-trigger::after {
+  content: '';
+}
+
+/*==============  SWIPER  ==================*/
+.swiper {
+  display: flex;
+  justify-content: center;
+}
+
+.skills-svg {
+  width: 40px;
+  height: 40px;
+  fill: #3b3b3b;
+  stroke: #3b3b3b;
+}
+.swiper-button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: #3b3b3b;
+}
+.swiper-button-next::after {
+  display: none;
 }
