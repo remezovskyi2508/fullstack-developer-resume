@@ -37,6 +37,7 @@
 }
 
 .question-title {
+  width: 250px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
@@ -76,6 +77,13 @@
 }
 
 /* Tablet 768px -> */
+@media only screen and (min-width: 375px) {
+  .question-title {
+    width: 290px;
+  }
+}
+
+/* Tablet 768px -> */
 @media only screen and (min-width: 768px) {
   .section.faq {
     padding-top: 48px;
@@ -97,7 +105,7 @@
     width: 574px;
   }
 
-  .question-title:last-of-type {
+  .question-title {
     width: 485px;
   }
 

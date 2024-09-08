@@ -1,4 +1,5 @@
 import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
 document.addEventListener('DOMContentLoaded', function () {
   const faqAccordion = new Accordion('.faq-accordion-js', {
