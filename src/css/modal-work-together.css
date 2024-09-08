@@ -1,6 +1,79 @@
-.modal-work-together {
+.modal-menu-dialog {
+  border: none;
+  padding: 0;
+  background-color:transparent;
+
   position: fixed;
+  inset-block-start: 0px;
+  inset-block-end: 0px;
+  max-width: calc((100%-6px)- 2em);
+  max-height: calc((100%-6px)- 2em);
+  user-select: text;
+  visibility: visible;
+  overflow: auto;
+
+  display: block;
   opacity: 0;
-  pointer-events: none;
   visibility: hidden;
+  transition: all .3s;
+}
+
+.modal-menu-dialog[open]{
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-menu-dialog::backdrop{
+  background: #0F0F10;
+  opacity: 0.6;
+}
+
+.modal-inner{
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  border-radius: 20px;
+  padding: 64px 32px;
+  max-width: 343px;
+  height: 270px;
+  background: #1c1d20;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.title-modal{
+  color: #ffffff;
+font-weight: 600;
+font-size: 20px;
+letter-spacing: -0.02em;
+text-align: center;
+margin-bottom: 15px;
+text-transform: none;
+}
+
+.paragraph-modal{
+text-align: center;
+color: rgba(250, 250, 250, 0.6);
+}
+
+.btn-svg-modal-icon{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border:none;
+  background-color: transparent;
+}
+
+.close-modal-menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  stroke: #ffffff;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .modal-inner{
+padding: 60px;
+max-width: 490px;
+height: 245px;
+  }
 }
