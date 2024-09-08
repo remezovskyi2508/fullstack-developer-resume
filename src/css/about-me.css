@@ -99,10 +99,7 @@
 }
 
 .about-me-skills-list {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-items: center;
+  width: 260px;
 }
 
 .about-me-skills-li {
@@ -158,6 +155,10 @@
   .second-paragrah {
     padding-bottom: 12px;
   }
+
+  .about-me-skills-list {
+    width: 600px;
+  }
 }
 
 /*================ DESKTOP STYLE  ======================*/
@@ -194,6 +195,10 @@
     width: 465px;
   }
 
+  .about-me-skills-list {
+    width: 1200px;
+  }
+
   .about-me-skills-li {
     width: 200px;
     height: 200px;
@@ -222,9 +227,15 @@
 }
 
 /*==============  SWIPER  ==================*/
-.swiper {
+/* .swiper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+} */
+
+.about-me-skills-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .skills-svg {
