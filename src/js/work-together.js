@@ -14,8 +14,8 @@ async function onSubmit(event) {
 
   try {
     const data = await sendRequest({
-      email: email.value,
-      comment: comment.value,
+      email: email.value.trim(),
+      comment: comment.value.trim(),
     });
     openModal(data);
     form.reset();
