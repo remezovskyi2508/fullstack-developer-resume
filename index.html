@@ -12,12 +12,96 @@
     <script type="module" crossorigin src="/fullstack-developer-resume/index.js"></script>
     <link rel="modulepreload" crossorigin href="/fullstack-developer-resume/assets/vendor-rqonQeHA.js">
     <link rel="stylesheet" crossorigin href="/fullstack-developer-resume/assets/vendor-CAyWdZBc.css">
-    <link rel="stylesheet" crossorigin href="/fullstack-developer-resume/assets/index-IDiOPOm3.css">
+    <link rel="stylesheet" crossorigin href="/fullstack-developer-resume/assets/index-B23nAFva.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    
+  <div class="header-container">
+    <!-- <div class="header-logo"> -->
+    <div class="logo-block">
+      <picture>
+        <source
+          srcset="/fullstack-developer-resume/assets/jefferson-desktop-qNevYTjn.png"
+          media="min-width: 1158px"
+        />
+        <source
+          srcset="/fullstack-developer-resume/assets/jefferson-tablet-BlpHZBme.png"
+          media="min-width: 768px"
+        />
+        <source
+          srcset="/fullstack-developer-resume/assets/jefferson-mobile-DEOtYWJs.png"
+          media="max-width: 767px"
+        />
+        <img
+          class="header-list-jefferson"
+          src="/fullstack-developer-resume/assets/jefferson-mobile-DEOtYWJs.png"
+          alt="images"
+          width="80"
+          height="80"
+        />
+      </picture>
+      <p class="titel-logo">jefferson*</p>
+    </div>
+    <!-- </div> -->
+    <div class="tumb-menu">
+      <p class="titel-menu">Menu</p>
+      <nav class="nav-menu visually-hidden">
+        <ul class="section-menu">
+          <li clas="box-menu">
+            <a href="#about-me">About me</a>
+          </li>
+          <li clas="box-menu">
+            <a href="#benefits">Benefits</a>
+          </li>
+          <li clas="box-menu">
+            <a href="#projects">Projects</a>
+          </li>
+          <li clas="box-menu">
+            <a href="#FAQ">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <button type="button" class="header-menu-btn">
+      <svg class="header-menu-icon" width="28" height="28">
+        <use href="/fullstack-developer-resume/assets/menu-DxCrvpWP.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+    <a class="contacts-menu-submit" href="#work-together">Order the project</a>
+  </div>
+
+  <div class="modal-overley is-open visually-hidden">
+    <button type="button" class="modal-close-btn">
+      <svg class="modal-close-icon" width="28" height="28">
+        <use href="/fullstack-developer-resume/assets/close-D6DbWWSE.svg#icon-x"></use>
+      </svg>
+    </button>
+    <div class="modal">
+      <nav class="nav-menu">
+        <ul class="section-menu" id="mobile-menu">
+          <li clas="box-menu">
+            <a href="#about-me">About me</a>
+          </li>
+          <li clas="box-menu">
+            <a href="#benefits">Benefits</a>
+          </li>
+          <li clas="box-menu">
+            <a href="#projects">Projects</a>
+          </li>
+          <li clas="box-menu">
+            <a href="#FAQ">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <a
+        class="contacts-menu-submit"
+        id="mobile-order-btn"
+        href="#work-together"
+        >Order the project</a
+      >
+    </div>
   </div>
 </header>
 
@@ -78,7 +162,7 @@
   </div>
 </section>
 
-      <section class="about-me-section">
+      <section id="about-me" class="about-me-section">
   <div class="container">
     <h1 class="visually-hidden">About me</h1>
     <div class="about-me">
@@ -330,7 +414,7 @@
   </div>
 </section>
 
-      <section class="projects">
+      <section id="projects" class="projects">
   <div class="container">
     <div class="projects-section-container">
       <h2 class="projects-section-title">Projects</h2>
