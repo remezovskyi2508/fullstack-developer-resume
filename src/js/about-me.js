@@ -3,6 +3,7 @@ import Swiper from 'swiper/bundle';
 
 const accordionBtn = document.querySelectorAll('.about-me-btn');
 const container = document.querySelector('.accordion-container');
+const aboutMeSlider = document.querySelector('.about-me-swiper-container');
 
 const accordion = new Accordion(container, {
   // elementClass: 'about-me-li',
@@ -23,38 +24,29 @@ const accordion = new Accordion(container, {
   },
 });
 
-const swiper = new Swiper('.swiper', {
-  setWrapperSize: true,
+const aboutMeSwiper = new Swiper(aboutMeSlider, {
   loop: true,
-  speed: 500,
+  speed: 700,
   simulateTouch: true,
   spaceBetween: 0,
+  slidesPerView: 2,
   navigation: {
-    nextEl: '.swiper-button-next',
+    nextEl: '.about-me-swiper-btn',
   },
 
   keyboard: {
     enabled: true,
-    onlyInViewport: false,
+    onlyInViewport: true,
   },
+
   breakpoints: {
-    375: {
-      slidesPerView: 'auto',
-      spaceBetween: 0,
-    },
-
     768: {
-      slidesPerView: 'auto',
-      spaceBetween: 0,
+      slidesPerView: 3,
     },
-
-    1400: {
-      slidesPerView: 'auto',
-      spaceBetween: 0,
+    1440: {
+      slidesPerView: 6,
     },
   },
-  slidesPerView: 'auto',
-  spaceBetween: 0,
 });
 
 accordionBtn.forEach(btn => {

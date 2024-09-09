@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 :root {
   --main-bg-color: #1c1d20;
   --content-bg-color: #242527;
@@ -18,20 +19,29 @@ body {
   letter-spacing: -0.02em;
   color: var(--main-text-color);
 }
-/* h1, h2 COMMON STYLES */
-h1,
-h2{
+
+h1 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+/* h2, h3 COMMON STYLES */
+h2,
+h3 {
   font-weight: 600;
 }
-/* h1 - styles */
-h1 {
+/* h2 - styles */
+h2 {
   font-size: 16px;
-  font-weight: 600;
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
 }
-/* h2 - styles */
-h2{
+
+/* h3 - styles */
+h3 {
   font-size: 20px;
 }
 
