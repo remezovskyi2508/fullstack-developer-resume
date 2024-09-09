@@ -105,15 +105,17 @@
 .hero-navigation-item {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  padding: 10px 8px;
   width: 37px;
   height: 37px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+.hero-navigation-item:hover {
+  border: 1px solid #fafafa;
+}
 .hero-navigation-link {
+  padding: 10px 8px;
   font-size: 14px;
   max-width: 20px;
   display: flex;
@@ -158,7 +160,6 @@
   .hero-navigation-item {
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
-    padding: 10px 8px;
     width: 37px;
     height: 37px;
     display: flex;
@@ -168,6 +169,7 @@
   }
 
   .hero-navigation-link {
+    padding: 10px 8px;
     font-size: 14px;
     max-width: 20px;
     display: flex;
@@ -203,7 +205,6 @@
     margin-top: 187px;
   }
   .hero-navigation-item {
-    padding: 18px 18px;
     width: 55px;
     height: 55px;
     margin-right: 8px;
@@ -217,8 +218,12 @@
     padding: 18px 24px;
     width: 223px;
   }
+    .hero-navigation-link-email {
+      width: 175px;
+    }
   .hero-navigation-link {
     font-size: 16px;
+    padding: 18px 18px;
   }
 }
 
