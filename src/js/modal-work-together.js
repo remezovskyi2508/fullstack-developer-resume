@@ -1,31 +1,28 @@
-const modalMenu = document.querySelector(".modal-menu-dialog");
-const btnCloseModal = document.querySelector(".btn-svg-modal-icon");
-const btnOpenModal = document.querySelector(".footer-send-btn");
+const modalMenu = document.querySelector('.modal-menu-dialog');
+const btnCloseModal = document.querySelector('.btn-svg-modal-icon');
+const btnOpenModal = document.querySelector('.footer-send-btn');
 
 export function openModal(data) {
-    modalMenu.show();
-    const modalTitle = document.querySelector('.modal-title');
-    const modalMessage = document.querySelector('.modal-messages');
-  
-    modalTitle.textContent = data.title;
-    modalMessage.textContent = data.message;
-  }
+  modalMenu.show();
+  const modalTitle = document.querySelector('.title-modal');
+  const modalMessage = document.querySelector('.paragraph-modal');
 
-const closeModal = () => {
-    modalMenu.close();
+  modalTitle.textContent = data.title;
+  modalMessage.textContent = data.message;
 }
 
-modalMenu.addEventListener('click', (event) =>{
-    const modalDiv = event.currentTarget;
-    const isOpen = event.target === modalDiv;
+const closeModal = () => {
+  modalMenu.close();
+};
 
-    if(isOpen){
-        modalMenu.close();
-        }
+modalMenu.addEventListener('click', event => {
+  const modalDiv = event.currentTarget;
+  const isOpen = event.target === modalDiv;
+
+  if (isOpen) {
+    modalMenu.close();
+  }
 });
-
-
-
 
 btnOpenModal.addEventListener('click', openModal);
 btnCloseModal.addEventListener('click', closeModal);
