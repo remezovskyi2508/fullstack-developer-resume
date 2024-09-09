@@ -83,7 +83,7 @@
 }
 
 .hero-glas-effect {
-  background-image: url(/img/hero/glass-effect.png);
+  background-image: url('/img/hero/glass-effect.png');
   background-repeat: no-repeat;
 }
 
