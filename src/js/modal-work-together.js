@@ -4,8 +4,8 @@ const btnOpenModal = document.querySelector(".footer-send-btn");
 
 export function openModal(data) {
     modalMenu.show();
-    const modalTitle = document.querySelector('.modal-title');
-    const modalMessage = document.querySelector('.modal-messages');
+    const modalTitle = document.querySelector('.title-modal');
+    const modalMessage = document.querySelector('.paragraph-modal');
   
     modalTitle.textContent = data.title;
     modalMessage.textContent = data.message;
