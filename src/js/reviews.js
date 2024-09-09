@@ -51,7 +51,7 @@ const getReviews = async () => {
         invert: true,
       },
       spaceBetween: 16,
-      speed: 400,
+      speed: 1100,
       slidesPerView: 1,
       breakpoints: {
         768: {
