@@ -17,6 +17,10 @@ async function onSubmit(event) {
       email: email.value.trim(),
       comment: comment.value.trim(),
     });
+    if (!data) {
+      return;
+    }
+    
     openModal(data);
     form.reset();
   } catch (error) {
