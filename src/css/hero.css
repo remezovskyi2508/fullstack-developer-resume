@@ -76,14 +76,14 @@
     #69292d 67.73%,
     #ed3b44 100%
   );
-  background-image: url('/img/hero/Hero.png');
+  background-image: url('/img/hero/hero.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 45% center;
 }
 
 .hero-glas-effect {
-  background-image: url(/img/hero/Glass\ effect\ 1.png);
+  background-image: url(/img/hero/glass-effect.png);
   background-repeat: no-repeat;
 }
 
@@ -218,9 +218,9 @@
     padding: 18px 24px;
     width: 223px;
   }
-    .hero-navigation-link-email {
-      width: 175px;
-    }
+  .hero-navigation-link-email {
+    width: 175px;
+  }
   .hero-navigation-link {
     font-size: 16px;
     padding: 18px 18px;
