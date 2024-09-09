@@ -1,7 +1,7 @@
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import { openModal } from '/js/modal-menu';
+import { openModal } from './modal-work-together';
 
 const form = document.querySelector('.work-together-form-js');
 
