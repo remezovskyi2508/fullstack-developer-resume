@@ -18,7 +18,11 @@ const getReviews = async () => {
     if (response.data.length === 0) {
       iziToast.error({
         message: 'No reviews found',
+        position: 'topCenter',
       });
+      reviewsList.innerHTML = `<li class="review-item review-item-not-found">Not found</li>`;
+      reviewsNextButton.disabled = true;
+      reviewsPrevButton.disabled = true;
       return;
     }
     const createReviewCard = reviewInfo => {
@@ -46,6 +50,7 @@ const getReviews = async () => {
       mousewheel: {
         invert: true,
       },
+      spaceBetween: 16,
       speed: 400,
       slidesPerView: 1,
       breakpoints: {
