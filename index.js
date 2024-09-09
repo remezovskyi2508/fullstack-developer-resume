@@ -3,5 +3,5 @@ import{i as u,a as m,A as y,S as p,N as L,K as O}from"./assets/vendor-rqonQeHA.j
           <img src="${t.avatar_url}" alt="" class="review-img">
           <h3 class="review-name">${t.author}</h3>
           <p class="review-desc">${t.review}</p>
-        </li>`,r=e.data.map(t=>o(t)).join("");l.innerHTML=r;const n=new p(z,{modules:[L,O],navigation:{nextEl:a,prevEl:d},keyboard:{enabled:!0,onlyInViewport:!0},mousewheel:{invert:!0},spaceBetween:16,speed:400,slidesPerView:1,breakpoints:{768:{slidesPerView:2},1440:{slidesPerView:4}}})}catch(e){console.log("Error fetching reviews:",e),u.error({message:"Failed to load reviews. Please try again later.",position:"topCenter"}),l.innerHTML='<li class="review-item review-item-not-found">Not found</li>',a.disabled=!0,d.disabled=!0}};U();
+        </li>`,r=e.data.map(t=>o(t)).join("");l.innerHTML=r;const n=new p(z,{modules:[L,O],navigation:{nextEl:a,prevEl:d},keyboard:{enabled:!0,onlyInViewport:!0},mousewheel:{invert:!0},spaceBetween:16,speed:1100,slidesPerView:1,breakpoints:{768:{slidesPerView:2},1440:{slidesPerView:4}}})}catch(e){console.log("Error fetching reviews:",e),u.error({message:"Failed to load reviews. Please try again later.",position:"topCenter"}),l.innerHTML='<li class="review-item review-item-not-found">Not found</li>',a.disabled=!0,d.disabled=!0}};U();
 //# sourceMappingURL=index.js.map
