@@ -1,197 +1,215 @@
 .header-container {
-    position: relative;
-    display: flex;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 375px;
-    padding: 32px 16px;
-    justify-content: space-between;
-    align-items: flex-start;
+  position: relative;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 375px;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .header-logo {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo-block {
-    display: flex;
+  display: flex;
 }
 
 .titel-logo {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.5;
-    width: 84px;
-    height: 19px;
-    padding-left: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  width: 84px;
+  height: 19px;
+  padding-left: 8px;
 }
 
 .is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal-overley {
-    display: flex;
-    background-image: url(../img/header/mobile-menu.png);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    padding-bottom: 64px;
+  display: flex;
+  background-image: url(../img/header/mobile-menu.png);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  padding: 302px 16px 64px;
+  z-index: 40;
+  overflow: hidden;
+}
+.modal-overley .nav-menu {
+  display: none;
+}
+
+.modal-overley.is-open .nav-menu {
+  display: flex; /* Или другой способ отображения, если нужно */
 }
 
 .modal {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-menu {
-    display: flex;
-    justify-content: center;
-    margin-top: 302px;
+  z-index: 50;
+  opacity: 1;
+  max-height: 0;
+  overflow: visible;
+  transition: opacity 0.5s ease, max-height 0.1s ease;
+}
+
+.box-menu a:hover {
+  text-decoration: underline;
+  color: var(--flame-red-color);
+}
+
+.nav-menu.is-open {
+  opacity: 1;
+  max-height: 100px; /* Задай достатню висоту для відкритого меню */
+  transition: opacity 0.5s ease, max-height 3s ease;
 }
 
 .section-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header-menu-btn {
-    border: none;
-    background: transparent;
-    margin-left: auto;
+  border: none;
+  background: transparent;
+  margin-left: auto;
 }
 
 .modal-close-btn {
-    border: none;
-    background: transparent;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 32px;
+  right: 16px;
 }
 
 .contacts-menu-submit {
-    display: flex;
-    font-weight: 500;
-    font-size: 14px;
-    color: #FAFAFA;
-    padding: 14px;
-    border-radius: 60px;
-    border: none;
-    width: 164px;
-    height: 45px;
-    background: #ED3B44;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fafafa;
+  padding: 14px;
+  border-radius: 60px;
+  border: none;
+  width: 164px;
+  height: 45px;
+  background: #ed3b44;
+  justify-content: center;
+  align-items: center;
 }
 
 .tumb-menu {
-    display: none;
+  display: none;
 }
 
 .header-container .contacts-menu-submit {
-    display: none;
+  display: none;
 }
 
 .header {
-    position: absolute;
-    top: 32px;
-    left: 16px;
-    right: 16px;
-    background-color: transparent;
+  position: absolute;
+  top: 32px;
+  left: 16px;
+  right: 16px;
+  background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
-    .header-container {
-        max-width: 704px;
+  .header-container {
+    max-width: 704px;
+  }
 
-    }
+  .logo-block {
+    display: flex;
+    margin-right: 135px;
+  }
 
-    .logo-block {
-        display: flex;
-        margin-right: 135px;
-    }
+  .tumb-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 135px;
+  }
 
-    .tumb-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-right: 135px;
-    }
+  .titel-menu {
+    display: flex;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+  }
 
-    .titel-menu {
-        display: flex;
-        font-size: 16px;
-        padding: 10px;
-        text-decoration: underline;
-    }
+  .titel-menu:hover {
+    text-decoration: underline;
+  }
 
-    .nav-menu {
-        margin-top: 0;
+  .titel-menu.active {
+    text-decoration: underline;
+  }
 
-    }
+  .nav-menu {
+    margin-top: 0;
+  }
 
-    .is-open {
-        display: none;
-    }
+  .nav-menu {
+    opacity: 0;
+    overflow: hidden;
+  }
 
-    .header-menu-btn {
-        display: none;
-    }
+  .header-menu-btn {
+    display: none;
+  }
 
-    .modal-close-btn {
-        display: none;
-    }
+  .modal-close-btn {
+    display: none;
+  }
 
-    .header-container .contacts-menu-submit {
-        display: flex;
-
-    }
+  .header-container .contacts-menu-submit {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .header-container {
-        max-width: 1376px;
-    }
+  .header-container {
+    max-width: 1376px;
+  }
 
-    .logo-block {
-        display: flex;
-        margin-right: 470px;
-    }
+  .logo-block {
+    display: flex;
+    margin-right: 470px;
+  }
 
-    .tumb-menu {
-        display: flex;
-        margin-right: 470px;
-    }
+  .tumb-menu {
+    display: flex;
+    margin-right: 470px;
+  }
 
-    .titel-logo {}
+  .titel-menu {
+    padding: 10px;
+  }
 
-    .titel-menu {
-        padding: 10px;
-    }
+  .header-menu-btn {
+    display: none;
+  }
 
-    .is-open {
-        display: none;
-    }
-
-    .header-menu-btn {
-        display: none;
-    }
-
-    .modal-close-btn {
-        display: none;
-    }
-
-    .contacts-menu-submit {}
+  .modal-close-btn {
+    display: none;
+  }
 }
