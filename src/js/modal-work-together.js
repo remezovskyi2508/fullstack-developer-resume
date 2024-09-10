@@ -1,6 +1,7 @@
 const modalMenu = document.querySelector('.modal-menu-dialog');
 const btnCloseModal = document.querySelector('.btn-svg-modal-icon');
 
+
 export function openModal(data) {
     modalMenu.show();
     const modalTitle = document.querySelector('.title-modal');
@@ -31,5 +32,9 @@ modalMenu.addEventListener('click', (event) =>{
         modalMenu.close();
         }
 });
+
+
+
+
 
 btnCloseModal.addEventListener('click', closeModal);
