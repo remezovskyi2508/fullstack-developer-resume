@@ -46,7 +46,7 @@ function scrollToSection(event) {
   const targetSection = document.getElementById(targetId);
 
   if (targetSection) {
-    const yOffset = -60; // Можливе зміщення
+    const yOffset = -60; 
     const yPosition =
       targetSection.getBoundingClientRect().top + window.scrollY + yOffset;
 
