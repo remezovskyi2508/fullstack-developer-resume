@@ -1,7 +1,11 @@
 import axios from 'axios';
-import iziToast from 'izitoast';
+
 import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
+import 'swiper/css/bundle';
+
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 const reviewsList = document.querySelector('.reviews-list');
 const reviewsSwiperContainer = document.querySelector(
@@ -37,7 +41,7 @@ const getReviews = async () => {
       .map(reviewDetails => createReviewCard(reviewDetails))
       .join('');
     reviewsList.innerHTML = reviewCardTemplate;
-    const reviewsSwiper = new Swiper(reviewsSwiperContainer, {
+    new Swiper(reviewsSwiperContainer, {
       modules: [Navigation, Keyboard],
       navigation: {
         nextEl: reviewsNextButton,
