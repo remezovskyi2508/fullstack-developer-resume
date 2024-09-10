@@ -1,6 +1,6 @@
 const modalMenu = document.querySelector('.modal-menu-dialog');
 const btnCloseModal = document.querySelector('.btn-svg-modal-icon');
-const btnOpenModal = document.querySelector('.footer-send-btn');
+
 
 export function openModal(data) {
     modalMenu.show();
@@ -27,5 +27,5 @@ modalMenu.addEventListener('click', (event) =>{
 
 
 
-btnOpenModal.addEventListener('click', openModal);
+
 btnCloseModal.addEventListener('click', closeModal);
