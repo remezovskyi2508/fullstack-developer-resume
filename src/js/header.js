@@ -5,14 +5,22 @@ const mobileMenu = document.querySelector('.modal-overley');
 const desktopMenu = document.querySelector('.nav-menu');
 const links = document.querySelectorAll('.section-menu a');
 const mobileLinks = document.querySelectorAll('#mobile-menu a');
-const spaceWindow = document.querySelector('.header-container');
+const orderModalBtn = document.querySelector('#mobile-order-btn');
 
 // Відкриття/закриття меню для мобільних пристроїв
 burger.addEventListener('click', toggleMobileMenu);
 closeBtn.addEventListener('click', toggleMobileMenu);
+orderModalBtn.addEventListener('click', toggleMobileMenu);
 
 function toggleMobileMenu() {
+  const isHidden = mobileMenu.classList.contains('visually-hidden');
   mobileMenu.classList.toggle('visually-hidden');
+
+  if (isHidden) {
+    document.body.style.overflow = 'hidden'; // Отключаем прокрутку
+  } else {
+    document.body.style.overflow = ''; // Включаем прокрутку обратно
+  }
 }
 
 // Відкриття/закриття меню для десктопних пристроїв

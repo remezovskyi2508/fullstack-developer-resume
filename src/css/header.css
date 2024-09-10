@@ -41,8 +41,16 @@
   width: 100%;
   height: 100%;
   background-size: cover;
-  padding-bottom: 64px;
-  z-index: 999;
+  padding: 302px 16px 64px;
+  z-index: 40;
+  overflow: hidden;
+}
+.modal-overley .nav-menu {
+  display: none;
+}
+
+.modal-overley.is-open .nav-menu {
+  display: flex; /* Или другой способ отображения, если нужно */
 }
 
 .modal {
@@ -55,10 +63,16 @@
 }
 
 .nav-menu {
-  opacity: 0;
+  z-index: 50;
+  opacity: 1;
   max-height: 0;
-  overflow: hidden;
+  overflow: visible;
   transition: opacity 0.5s ease, max-height 0.1s ease;
+}
+
+.box-menu a:hover {
+  text-decoration: underline;
+  color: var(--flame-red-color);
 }
 
 .nav-menu.is-open {
@@ -83,8 +97,8 @@
   border: none;
   background: transparent;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 32px;
+  right: 16px;
 }
 
 .contacts-menu-submit {
@@ -150,13 +164,13 @@
     text-decoration: underline;
   }
 
-  .box-menu a:hover {
-    text-decoration: underline;
-    color: var(--flame-red-color);
+  .nav-menu {
+    margin-top: 0;
   }
 
   .nav-menu {
-    margin-top: 0;
+    opacity: 0;
+    overflow: hidden;
   }
 
   .header-menu-btn {
