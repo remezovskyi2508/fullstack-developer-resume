@@ -1,11 +1,14 @@
 import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
+
 import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 const accordionBtn = document.querySelectorAll('.about-me-btn');
 const container = document.querySelector('.accordion-container');
 const aboutMeSlider = document.querySelector('.about-me-swiper-container');
 
-const accordion = new Accordion(container, {
+new Accordion(container, {
   // elementClass: 'about-me-li',
   // triggerClass: 'ac-trigger',
   closeOther: true,
@@ -24,7 +27,7 @@ const accordion = new Accordion(container, {
   },
 });
 
-const aboutMeSwiper = new Swiper(aboutMeSlider, {
+new Swiper(aboutMeSlider, {
   loop: true,
   speed: 700,
   simulateTouch: true,
