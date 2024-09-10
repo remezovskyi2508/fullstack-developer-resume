@@ -9,4 +9,4 @@ It can be › `+f);return}r||window.innerWidth<=c?y.position=="bottomLeft"||y.po
         rotateZ(${f.rotate?l?-C:C:0}deg)
         scale(${I})
       `;if(f.slideShadows){let A=u.querySelector(".swiper-slide-shadow");A||(A=we("cards",u)),A&&(A.style.opacity=Math.min(Math.max((Math.abs(g)-.5)/.5,0),1))}u.style.zIndex=-Math.abs(Math.round(m))+a.length;const x=ze(f,u);x.style.transform=T}},setTransition:a=>{const d=e.slides.map(l=>ge(l));d.forEach(l=>{l.style.transitionDuration=`${a}ms`,l.querySelectorAll(".swiper-slide-shadow").forEach(f=>{f.style.transitionDuration=`${a}ms`})}),Ke({swiper:e,duration:a,transformElements:d})},perspective:()=>!0,overwriteParams:()=>({watchSlidesProgress:!0,virtualTranslate:!e.params.cssMode})})}const sa=[Pr,Ar,Ir,Or,zr,Dr,Rr,Nr,kr,Br,$r,Fr,Hr,qr,_r,Gr,Ur,Kr,Jr,Zr,Qr,ea,ta];se.use(sa);export{na as A,Ar as K,Or as N,se as S,W as a,ia as i};
-//# sourceMappingURL=vendor-rqonQeHA.js.map
+//# sourceMappingURL=vendor-BCVXoVNN.js.map
