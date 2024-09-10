@@ -8,6 +8,7 @@
   --arrow-color: #3b3b3b;
   --flame-red-color: #ed3b44;
   --main-text-color: #fafafa;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -54,7 +55,6 @@ h3 {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
