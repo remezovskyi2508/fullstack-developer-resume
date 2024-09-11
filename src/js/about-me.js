@@ -4,28 +4,13 @@ import 'accordion-js/dist/accordion.min.css';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-const accordionBtn = document.querySelectorAll('.about-me-btn');
-const container = document.querySelector('.accordion-container');
 const aboutMeSlider = document.querySelector('.about-me-swiper-container');
 
-new Accordion(container, {
-  // elementClass: 'about-me-li',
-  // triggerClass: 'ac-trigger',
-  closeOther: true,
-  slideSpeed: 400,
-  modal: true,
-  duration: 400,
-  showMultiple: false,
-  collapse: true,
-  activeIndex: 0,
-  openOnInit: [0],
-  onOpen: function (currentElement) {
-    currentElement.style.display = 'grid';
-  },
-  onClose: function (currentElement) {
-    currentElement.style.display = 'none';
-  },
+const accordionAboutMe = new Accordion('.about-me-accordion-container', {
+  duration: 600,
+  showMultiple: true,
 });
+accordionAboutMe.open(0);
 
 new Swiper(aboutMeSlider, {
   loop: true,
@@ -50,14 +35,4 @@ new Swiper(aboutMeSlider, {
       slidesPerView: 6,
     },
   },
-});
-
-accordionBtn.forEach(btn => {
-  btn.addEventListener('click', event => {
-    btn.classList.toggle('is-active-svg');
-    const panel = event.target
-      .closest('.about-me-li')
-      .querySelector('.ac-panel');
-    panel.style.display = panel.style.display === 'grid' ? 'none' : 'grid';
-  });
 });

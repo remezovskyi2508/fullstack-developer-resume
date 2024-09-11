@@ -1,4 +1,8 @@
 /*================ MOBILE STYLE  ======================*/
+.about-me-section {
+  margin-bottom: 32px;
+}
+
 .about-me {
   display: flex;
   flex-direction: column;
@@ -119,7 +123,7 @@
   width: 260px;
 }
 
-.about-me-skills-li {
+.about-me-skills-li.swiper-slide {
   width: 130px;
   height: 130px;
   border-radius: 100%;
@@ -151,6 +155,10 @@
 
 /*================ TABLET STYLE  ======================*/
 @media only screen and (min-width: 768px) {
+  .about-me-section {
+    margin-bottom: 48px;
+  }
+
   .about-me {
     margin-bottom: 64px;
   }
@@ -192,7 +200,7 @@
     width: 600px;
   }
 
-  .about-me-skills-li {
+  .about-me-skills-li.swiper-slide {
     width: 200px;
     height: 200px;
   }
@@ -204,6 +212,10 @@
 
 /*================ DESKTOP STYLE  ======================*/
 @media only screen and (min-width: 1440px) {
+  .about-me-section {
+    margin-bottom: 82px;
+  }
+
   .about-me {
     width: 1376px;
     display: flex;
@@ -239,32 +251,112 @@
   .about-me-skills-list {
     width: 1200px;
   }
-
-  .about-me-skills-li {
-    width: 200px;
-    height: 200px;
-  }
 }
 
 /*==============  ACORDEON  ==================*/
 
-.ac-panel {
-  display: none;
+.accordion-about {
+  margin-bottom: 32px;
 }
 
-.ac {
+.accordion-about-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.about-me-accordion-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}
+
+.accordion-about .ac {
+  margin-top: 20px;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
   background-color: transparent;
   border: none;
 }
-.ac-trigger {
+
+.accordion-about .ac .ac-trigger {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 100px;
-  padding: 0px;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 9px;
 }
-.ac .ac-trigger::after {
+
+.about-me-accordion-arrow-svg {
+  width: 18px;
+  height: 18px;
+}
+
+.is-active .about-me-accordion-arrow-svg {
+  transform: rotate(180deg);
+}
+
+.accordion-about .ac.is-active > .ac-header .ac-trigger::after {
   content: '';
+}
+
+.accordion-about .ac .ac-trigger::after {
+  content: '';
+}
+
+.accordion-about .underline {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.about-me-accordion-info p {
+  margin-bottom: 10px;
+}
+
+.about-me-accordion-info p.about-me-accordion-top-text {
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .accordion-about {
+    margin-bottom: 64px;
+  }
+
+  .about-me-accordion-info-wrapper {
+    padding-bottom: 8px;
+  }
+
+  .accordion-about .ac .ac-trigger {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .about-me-accordion-arrow-svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .accordion-about .underline {
+    padding-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .accordion-about {
+    margin-bottom: 96px;
+  }
+
+  .about-me-accordion-info {
+    padding: 0 68px 0 696px;
+  }
 }
 
 /*==============  SWIPER  ==================*/
