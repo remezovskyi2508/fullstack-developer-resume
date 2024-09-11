@@ -114,11 +114,14 @@
   }
   .faq-accordion-item {
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 24px;
   }
 }
 /* Descktop 1440 -> */
 @media screen and (min-width: 1440px) {
+  .faq-accordion-item {
+    padding-bottom: 32px;
+  }
   .faq-accordion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
