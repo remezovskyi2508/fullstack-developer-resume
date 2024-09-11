@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     duration: 400,
     showMultiple: true,
     elementClass: 'faq-accordion-item',
-    triggerClass: 'question-wrapper',
+    triggerClass: 'faq-arrow-button',
     panelClass: 'faq-accordion-panel',
   });
 });
