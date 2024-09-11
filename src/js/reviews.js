@@ -51,9 +51,6 @@ const getReviews = async () => {
         enabled: true,
         onlyInViewport: true,
       },
-      // mousewheel: {
-      //   invert: true,
-      // },
       spaceBetween: 16,
       speed: 1100,
       slidesPerView: 1,
