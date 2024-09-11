@@ -9,6 +9,7 @@ export function openModal(data) {
   modalTitle.textContent = data.title;
   modalMessage.textContent = data.message;
 
+  document.body.style.overflow = 'hidden';
   addEventListener('keydown', escEvt);
 }
 
@@ -22,6 +23,7 @@ const closeModal = () => {
   const sendBtn = document.querySelector('.footer-send-btn');
   sendBtn.classList.remove('is-active');
   modalMenu.close();
+  document.body.style.overflow = '';
   removeEventListener('keydown', escEvt);
 };
 
