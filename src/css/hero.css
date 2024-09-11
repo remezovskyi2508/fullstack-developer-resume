@@ -7,15 +7,36 @@
     #69292d 67.73%,
     #ed3b44 100%
   );
-  background-image: url('/img/hero/hero.png');
+  background-image: url('/img/hero/hero-mob.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 45% center;
 }
 
-.hero-glas-effect {
-  background-image: url('/img/hero/glass-effect.png');
-  background-repeat: no-repeat;
+@media screen and (min-width: 320px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('/img/hero/hero-mob@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url('/img/hero/hero-tabl.jpg');
+  }
+}
+/* @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+.hero {
+    background-image: url('../img/hero/hero-tabl@2x.jpg');
+} */
+@media screen and (min-width: 1440px) {
+  .hero {
+    background-image: url('/img/hero/hero-deck.jpg');
+  }
+}
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('/img/hero/hero-deck@2x.jpg');
+  }
 }
 
 .hero-title {
