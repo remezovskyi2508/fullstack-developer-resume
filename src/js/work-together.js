@@ -12,13 +12,18 @@ async function onSubmit(event) {
 
   const { email, comment } = event.currentTarget.elements;
 
+  const sendBtn = document.querySelector('.footer-send-btn');
+
   try {
     const data = await sendRequest({
       email: email.value.trim(),
       comment: comment.value.trim(),
     });
-    openModal(data);
-    form.reset();
+    sendBtn.classList.add('is-active');
+    setTimeout(() => {
+      openModal(data);
+      form.reset();
+    }, 700);
   } catch (error) {
     console.log(error);
     iziToast.show({

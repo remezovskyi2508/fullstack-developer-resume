@@ -19,6 +19,10 @@
   z-index: 999;
 }
 
+body:has(dialog[open]) {
+  overflow: hidden
+}
+
 .modal-menu-dialog[open]{
   opacity: 1;
   visibility: visible;
