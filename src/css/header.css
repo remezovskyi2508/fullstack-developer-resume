@@ -115,6 +115,10 @@
   justify-content: center;
   align-items: center;
 }
+.contacts-menu-submit:hover,
+.contacts-menu-submit:focus{
+  background-color: #E0373F;
+}
 
 .tumb-menu {
   display: none;
