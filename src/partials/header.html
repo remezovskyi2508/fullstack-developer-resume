@@ -1,19 +1,19 @@
 <header class="header">
   <div class="container">
     <div class="header-container">
-      <a href="./" class="logo-block">
+      <a href="../index.html" class="logo-block">
         <picture>
           <source
             srcset="/img/header/jefferson-desktop.png"
-            media="min-width: 1158"
+            media="min-width: 1158px"
           />
           <source
             srcset="/img/header/jefferson-tablet.png"
-            media="min-width: 768"
+            media="min-width: 768px"
           />
           <source
             srcset="/img/header/jefferson-mobile.png"
-            media="max-width: 767"
+            media="max-width: 767px"
           />
           <img
             class="header-list-jefferson"
@@ -25,10 +25,9 @@
         </picture>
         <p class="titel-logo">jefferson*</p>
       </a>
-      <!-- </div> -->
       <div class="tumb-menu">
-        <p class="titel-menu">Menu</p>
-        <nav class="nav-menu">
+        <div class="titel-menu">Menu</div>
+        <nav class="nav-menu" id="mobile-order-btn">
           <ul class="section-menu">
             <li class="box-menu">
               <a href="#about-me">About me</a>
@@ -51,10 +50,11 @@
           <use href="/img/header/menu.svg#icon-menu"></use>
         </svg>
       </button>
-
-      <a class="contacts-menu-submit" href="#work-together"
-        >Order the project</a
-      >
+      <button class="header-contacts-btn" type="button">
+        <a class="contacts-menu-submit" href="#work-together"
+          >Order the project</a
+        >
+      </button>
     </div>
   </div>
 
@@ -81,12 +81,9 @@
           </li>
         </ul>
       </nav>
-      <a
-        class="contacts-menu-submit"
-        id="mobile-order-btn"
-        href="#work-together"
-        >Order the project</a
-      >
+      <button class="contacts-menu-btn" type="button">
+        <a href="#work-together">Order the project</a>
+      </button>
     </div>
   </div>
 </header>

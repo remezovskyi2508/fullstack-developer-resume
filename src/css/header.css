@@ -45,12 +45,13 @@
   z-index: 40;
   overflow: hidden;
 }
+
 .modal-overley .nav-menu {
   display: none;
 }
 
 .modal-overley.is-open .nav-menu {
-  display: flex; /* Или другой способ отображения, если нужно */
+  display: flex;
 }
 
 .modal {
@@ -72,12 +73,17 @@
 
 .box-menu a:hover {
   text-decoration: underline;
-  color: var(--flame-red-color);
+  color: #ed3b44;
+}
+
+.box-menu a:focus {
+  text-decoration: underline;
+  color: #ed3b44;
 }
 
 .nav-menu.is-open {
   opacity: 1;
-  max-height: 100px; /* Задай достатню висоту для відкритого меню */
+  max-height: 100px;
   transition: opacity 0.5s ease, max-height 3s ease;
 }
 
@@ -101,7 +107,7 @@
   right: 16px;
 }
 
-.contacts-menu-submit {
+.header-contacts-btn {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -116,11 +122,15 @@
   align-items: center;
 }
 
-.tumb-menu {
-  display: none;
+.header-contacts-btn:hover {
+  background: #e0373f;
 }
 
-.header-container .contacts-menu-submit {
+.header-contacts-btn:focus {
+  background: #e0373f;
+}
+
+.tumb-menu {
   display: none;
 }
 
@@ -130,6 +140,33 @@
   left: 16px;
   right: 16px;
   background-color: transparent;
+}
+
+.header-contacts-btn {
+  display: none;
+}
+
+.contacts-menu-btn {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fafafa;
+  padding: 14px;
+  border-radius: 60px;
+  border: none;
+  width: 164px;
+  height: 45px;
+  background: #ed3b44;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-menu-btn:hover {
+  background: #e0373f;
+}
+
+.contacts-menu-btn:focus {
+  background: #e0373f;
 }
 
 @media screen and (min-width: 768px) {
@@ -182,6 +219,10 @@
   }
 
   .header-container .contacts-menu-submit {
+    display: flex;
+  }
+
+  .header-contacts-btn {
     display: flex;
   }
 }
