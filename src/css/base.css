@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('../fonts/inter-tight-medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('../fonts/inter-tight-semibold.ttf') format('truetype');
+  font-weight: 600;
+}
+
 * {
   box-sizing: border-box;
 }
