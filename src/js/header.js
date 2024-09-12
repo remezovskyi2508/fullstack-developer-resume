@@ -12,12 +12,10 @@ closeBtn.addEventListener('click', toggleMobileMenu);
 orderModalBtn.addEventListener('click', toggleMobileMenu);
 
 function toggleMobileMenu() {
-  mobileMenu.classList.toggle('is-open');
-  const isOpen = mobileMenu.classList.contains('is-open');
+  const isOpen = mobileMenu.classList.toggle('is-open');
 
-  if (!isOpen) {
+  if (isOpen) {
     document.body.style.overflow = 'hidden';
-    desktopMenu.classList.toggle('visual-hidden');
   } else {
     document.body.style.overflow = '';
   }
@@ -44,7 +42,7 @@ function scrollToSection(event) {
   const targetSection = document.getElementById(targetId);
 
   if (targetSection) {
-    const yOffset = -60; 
+    const yOffset = -60;
     const yPosition =
       targetSection.getBoundingClientRect().top + window.scrollY + yOffset;
 

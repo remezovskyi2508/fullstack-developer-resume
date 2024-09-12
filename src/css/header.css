@@ -28,14 +28,16 @@
 
 .modal-overley {
   left: 100%;
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
   pointer-events: auto;
   position: fixed;
 }
 
 .modal-overley.is-open {
   display: flex;
+  opacity: 1;
+  visibility: visible;
   background-image: url(../img/header/mobile-menu.png);
   top: 0;
   left: 0%;
@@ -78,7 +80,7 @@
 .nav-menu.is-open {
   opacity: 1;
   max-height: 100px;
-  transition: opacity 0.5s ease, max-height 3s ease;
+  transition: opacity 0.5s ease, max-height 1s ease;
 }
 
 .section-menu {
