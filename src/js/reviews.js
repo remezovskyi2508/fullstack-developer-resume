@@ -32,7 +32,7 @@ const getReviews = async () => {
     const createReviewCard = reviewInfo => {
       return `
         <li class="review-item swiper-slide">
-          <img src="${reviewInfo.avatar_url}" alt="" class="review-img">
+          <img src="${reviewInfo.avatar_url}" loading="lazy" alt="${reviewInfo.author}" class="review-img">
           <h3 class="review-name">${reviewInfo.author}</h3>
           <p class="review-desc">${reviewInfo.review}</p>
         </li>`;
