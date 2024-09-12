@@ -24,10 +24,11 @@
     background-image: url('/img/hero/hero-tabl.jpg');
   }
 }
-/* @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-.hero {
-    background-image: url('../img/hero/hero-tabl@2x.jpg');
-} */
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('/img/hero/hero-tabl@2x.jpg');
+  }
+}
 @media screen and (min-width: 1440px) {
   .hero {
     background-image: url('/img/hero/hero-deck.jpg');
@@ -188,4 +189,19 @@
   .hero-navigation {
     margin-top: 243px;
   }
+}
+
+@keyframes falling {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.title-animation {
+  animation: falling 3s ease-out;
 }
