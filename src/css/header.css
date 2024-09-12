@@ -116,8 +116,8 @@
   align-items: center;
 }
 .contacts-menu-submit:hover,
-.contacts-menu-submit:focus{
-  background-color: #E0373F;
+.contacts-menu-submit:focus {
+  background-color: #e0373f;
 }
 
 .tumb-menu {
@@ -157,13 +157,15 @@
     display: flex;
     font-size: 16px;
     padding: 10px;
-    cursor: pointer;
+    text-decoration: none;
   }
 
   .titel-menu:hover {
-    text-decoration: underline;
+    cursor: pointer;
   }
 
+  .titel-menu:hover,
+  .titel-menu:focus,
   .titel-menu.active {
     text-decoration: underline;
   }

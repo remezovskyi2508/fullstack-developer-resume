@@ -54,6 +54,7 @@ function scrollToSection(event) {
 document.addEventListener('click', event => {
   if (!desktopMenu.contains(event.target) && !menuBtn.contains(event.target)) {
     desktopMenu.classList.remove('is-open');
+    menuBtn.classList.remove('active');
   }
 });
 
@@ -61,6 +62,7 @@ document.addEventListener('keydown', event => {
   if (event.key === 'Escape') {
     if (desktopMenu.classList.contains('is-open')) {
       desktopMenu.classList.remove('is-open');
+      menuBtn.classList.remove('active');
     }
     return;
   }
