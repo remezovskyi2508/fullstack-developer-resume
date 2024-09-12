@@ -1,66 +1,60 @@
-.section-covers{
-    background-image: url(/img/covers/cover-background.png);
-    height: 508px;
-    overflow: hidden;
-    margin: 32px 0;
-  }
- 
-  .content {
-    position: relative;
-  }
-  .marquee {
-    position: absolute;
-    left: 0;
-    overflow: hidden;
-  
-  }
-  
-  .marquee__inner {
-      display: flex;
-      transform: rotate(16deg);
-    
-  }
-  
-  .marquee__line {
-    margin-top: 20px;
-    flex-shrink: 0;
-    margin-right: 20px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    animation-name: marqueeLine;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-play-state: paused;
-  
-  }
-  
-  @keyframes marqueeLine {
-    from {
-      transform: translateX(-20%);
-    }
-    
-    to {
-      transform: translateX(-180%);
-    }
+.section-covers {
+  background-image: url(/img/covers/cover-background.png);
+  height: 508px;
+  overflow: hidden;
+  margin: 32px 0;
+}
+
+.content {
+  position: relative;
+}
+.marquee {
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+}
+
+.marquee__inner {
+  display: flex;
+  transform: rotate(16deg);
+}
+
+.marquee__line {
+  margin-top: 20px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
   }
 
-  .cover-img{
-    width: 282px;
-    height: 163px;
+  to {
+    transform: translateX(-180%);
   }
+}
 
-  @media only screen and (min-width: 768px) {
-    .cover-img{
-        width: 544px;
-        height: 314px;  
-      }
-      .section-covers{
-        height: 960px;
-      }
+.cover-img {
+  width: 282px;
+  height: 163px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cover-img {
+    width: 544px;
+    height: 314px;
   }
-  
- 
-
+  .section-covers {
+    height: 960px;
+  }
+}
