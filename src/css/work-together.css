@@ -52,6 +52,17 @@
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
+.work-together-form input:-webkit-autofill, .work-together-form input:-webkit-autofill:focus {
+  background-color: transparent !important;
+  color: #FAFAFA !important;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  box-shadow: 0 0 0 1000px transparent inset !important;
+}
+
+.work-together-form input[data-autocompleted] {
+  background-color: transparent !important;
+}
+
 .form-span {
   position: absolute;
   transform: translateY(44px);
