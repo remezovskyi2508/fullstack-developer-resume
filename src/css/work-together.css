@@ -114,13 +114,21 @@
 }
 
 .is-active > span {
-  animation: disappear 0.7s ease-in-out;
+  animation: disappear 0.3s ease-in-out;
   animation-fill-mode: forwards
 }
 
 .is-active > img {
   animation: appear 0.7s ease-in-out;
   animation-fill-mode: forwards
+}
+
+.work-together-phone:hover {
+  animation: wiggle 1.5s linear infinite;
+}
+
+.work-together-email:hover {
+    animation: float 0.5s ease-out infinite;
 }
 
 @keyframes appear {
@@ -144,6 +152,47 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-5deg);
+  }
+  20% {
+    transform: rotateZ(2deg);
+  }
+  25% {
+    transform: rotateZ(-2deg);
+  }
+  30% {
+    transform: rotateZ(2deg);
+  }
+  35% {
+    transform: rotateZ(0deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+@keyframes float {
+  25% {
+    transform: translate(1px, 0);
+  }
+  50% {
+    transform: translate(1px, -1px);
+  }
+  75% {
+    transform: translate(-1px, -1px);
+  }
+  100% {
+    transform: translate(-1px, 0);
   }
 }
 
