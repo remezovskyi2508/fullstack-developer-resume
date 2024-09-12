@@ -52,10 +52,16 @@
     height: 163px;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .cover-img{
         width: 544px;
         height: 314px;  
+        margin: 20px, 20px;
+      }
+      .cover-img img{
+        width: 544px;
+        height: 314px;  
+        margin: 20px, 20px;
       }
       .section-covers{
         height: 960px;
