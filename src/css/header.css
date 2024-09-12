@@ -158,13 +158,15 @@
     display: flex;
     font-size: 16px;
     padding: 10px;
-    cursor: pointer;
+    text-decoration: none;
   }
 
   .titel-menu:hover {
-    text-decoration: underline;
+    cursor: pointer;
   }
 
+  .titel-menu:hover,
+  .titel-menu:focus,
   .titel-menu.active {
     text-decoration: underline;
   }
