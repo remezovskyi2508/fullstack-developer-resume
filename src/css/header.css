@@ -50,7 +50,7 @@
 }
 
 .modal-overley.is-open .nav-menu {
-  display: flex; /* Или другой способ отображения, если нужно */
+  display: flex;
 }
 
 .modal {
@@ -70,14 +70,15 @@
   transition: opacity 0.5s ease, max-height 0.1s ease;
 }
 
-.box-menu a:hover {
+.box-menu a:hover,
+.box-menu a:focus {
   text-decoration: underline;
   color: var(--flame-red-color);
 }
 
 .nav-menu.is-open {
   opacity: 1;
-  max-height: 100px; /* Задай достатню висоту для відкритого меню */
+  max-height: 100px;
   transition: opacity 0.5s ease, max-height 3s ease;
 }
 
@@ -116,8 +117,8 @@
   align-items: center;
 }
 .contacts-menu-submit:hover,
-.contacts-menu-submit:focus{
-  background-color: #E0373F;
+.contacts-menu-submit:focus {
+  background-color: #e0373f;
 }
 
 .tumb-menu {
