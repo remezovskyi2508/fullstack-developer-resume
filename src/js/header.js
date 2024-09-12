@@ -12,11 +12,12 @@ closeBtn.addEventListener('click', toggleMobileMenu);
 orderModalBtn.addEventListener('click', toggleMobileMenu);
 
 function toggleMobileMenu() {
-  const isHidden = mobileMenu.classList.contains('visually-hidden');
-  mobileMenu.classList.toggle('visually-hidden');
+  mobileMenu.classList.toggle('is-open');
+  const isOpen = mobileMenu.classList.contains('is-open');
 
-  if (isHidden) {
+  if (!isOpen) {
     document.body.style.overflow = 'hidden';
+    desktopMenu.classList.toggle('visual-hidden');
   } else {
     document.body.style.overflow = '';
   }

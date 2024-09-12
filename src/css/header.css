@@ -26,30 +26,29 @@
   padding-left: 8px;
 }
 
-.is-open {
+.modal-overley {
+  left: 100%;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  position: fixed;
 }
 
-.modal-overley {
+.modal-overley.is-open {
   display: flex;
   background-image: url(../img/header/mobile-menu.png);
-  position: fixed;
   top: 0;
-  left: 0;
+  left: 0%;
   width: 100%;
   height: 100%;
   background-size: cover;
   padding: 302px 16px 64px;
   z-index: 40;
   overflow: hidden;
-}
-.modal-overley .nav-menu {
-  display: none;
+  transition: left 0.8s ease;
 }
 
-.modal-overley.is-open .nav-menu {
+.modal-overley .nav-menu {
   display: flex;
 }
 
@@ -99,7 +98,7 @@
   background: transparent;
   position: absolute;
   top: 32px;
-  right: 16px;
+  right: 32px;
 }
 
 .contacts-menu-submit {
