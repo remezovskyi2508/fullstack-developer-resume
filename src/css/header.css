@@ -33,7 +33,7 @@
   pointer-events: auto;
   position: fixed;
 }
-F
+
 .modal-overley.is-open {
   display: flex;
   opacity: 1;
