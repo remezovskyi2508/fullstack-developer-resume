@@ -12,10 +12,9 @@ closeBtn.addEventListener('click', toggleMobileMenu);
 orderModalBtn.addEventListener('click', toggleMobileMenu);
 
 function toggleMobileMenu() {
-  const isHidden = mobileMenu.classList.contains('visually-hidden');
-  mobileMenu.classList.toggle('visually-hidden');
+  const isOpen = mobileMenu.classList.toggle('is-open');
 
-  if (isHidden) {
+  if (isOpen) {
     document.body.style.overflow = 'hidden';
   } else {
     document.body.style.overflow = '';
@@ -43,7 +42,7 @@ function scrollToSection(event) {
   const targetSection = document.getElementById(targetId);
 
   if (targetSection) {
-    const yOffset = -60; 
+    const yOffset = -60;
     const yPosition =
       targetSection.getBoundingClientRect().top + window.scrollY + yOffset;
 
